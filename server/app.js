@@ -17,6 +17,10 @@ app.get('/',(req , res) => {
     res.send('hello sruthi')
 })
 
+app.get("/api", (req, res) => {
+    res.json({ message: "Hello from server!" });
+  });
+
 app.listen(PORT,()=>{
     console.log(`listening to port ${chalk.green(PORT)}`);
 });
