@@ -20,6 +20,5 @@ app.get('/',(req , res) => {
 app.listen(PORT,()=>{
     console.log(`listening to port ${chalk.green(PORT)}`);
 });
-
 //to run app ,command node app.js or npm start
 //everytime change is made nodemon monitors and restarts the app
