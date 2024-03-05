@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(morgan('tiny')); //HTTP request logger middleware for Node. js
 
 //sets up middleware to serve static files (eg html)
-app.use(express.static(path.join(__dirname,'/public/')));
+app.use(express.static(path.join(__dirname,'client/public/')));
 
 app.get('/',(req , res) => {
     res.send('hello sruthi')
@@ -20,7 +20,7 @@ app.get('/',(req , res) => {
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
   });
-
+  
 app.listen(PORT,()=>{
     console.log(`listening to port ${chalk.green(PORT)}`);
 });
