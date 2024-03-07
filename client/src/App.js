@@ -1,10 +1,10 @@
 import React from 'react';
+import LoginSignup from './Components/LoginSignup/LoginSignup';
 
 function App() {
   return (
     <div>
-      <h1>Hello, World!</h1>
-      <p>This is a basic React app.</p>
+      <LoginSignup/> 
     </div>
   );
 }
